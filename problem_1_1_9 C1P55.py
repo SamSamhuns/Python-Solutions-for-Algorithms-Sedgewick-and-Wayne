@@ -7,12 +7,10 @@ into a String s.
 s = ""
 
 def int_to_bin ( N ):
-  result = ""
   while N != 0:
     rem = N % 2
     N = N / 2
-    result = str(rem) + result
-  s = result
+    s = str(rem) + s
   print(s)
 
 int_to_bin( 15 )
