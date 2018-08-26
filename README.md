@@ -1,4 +1,4 @@
-# Python-Solutions-for-Algorithms-Sedgewick-and-Wayne
+# Python-Select-Solutions-for-Algorithms-Sedgewick-and-Wayne
 ### Python Solutions to Algorithms 4th Edition by Robert Sedgewick, Kevin Wayne
 
 This repository contains an attempt at solutions using Python to the listed examples and exercises in Algorithhms 4th Edition by Robert Sedgewick, Kevin Wayne
