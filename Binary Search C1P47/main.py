@@ -11,7 +11,22 @@ input stream.
 ■ Use the test client to put onto standard output the numbers that are not associat-
 ed with any customer. Presumably the company would refuse such transactions.
 '''
-import sys # For using command line arguments
+import random
+import time
+
+
+# Generating the whitelist files and test files by random
+fpw_gen = open( 'tinyW.txt', 'w')
+fpt_gen = open( 'tinyT.txt', 'w')
+
+# Number of random numbers to generate
+num = 1000
+for n in range( 1, num ):
+  fpw_gen.write( str(random.randint(100, 500 ))+ ' ')
+  fpt_gen.write( str(random.randint(100, 500 ))+ ' ')
+
+fpw_gen.close()
+fpt_gen.close()
 
 # Name of files for input and whitelisting
 fpw = open( 'tinyW.txt', 'r')
@@ -46,5 +61,11 @@ def b_search():
   for elem in testlist:
     if rank( int(elem), whitelist ) < 0:
       print( elem ) 
-
+      
+# Time execution of binary search filter print
+start_time = time.time()
 b_search()
+print("--- %s seconds ---" % (time.time() - start_time))
+
+fpw.close()
+fpt.close()
