@@ -39,7 +39,7 @@ def rank ( key, arr ):
   max = len(arr) - 1 
   while ( min <= max):
 
-    mid = min + ( max - min ) / 2
+    mid = min + ( max - min ) // 2
     if key < int(arr[mid]):
       max = mid - 1
     elif key > int(arr[mid]):
