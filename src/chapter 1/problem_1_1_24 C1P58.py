@@ -1,5 +1,5 @@
 # Chapter 1 Page 58
-# Problem 1.1.24
+# Problem 1.1.23
 # Binary Search Whitelist filtering
 '''
 Filters and prints out unique sequences of numbers in tinyT.txt compared to tinyW.txt
