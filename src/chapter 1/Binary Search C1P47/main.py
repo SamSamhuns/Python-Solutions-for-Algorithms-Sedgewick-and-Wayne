@@ -55,12 +55,12 @@ def b_search():
 
   for key, val in enumerate(whitelist):
     whitelist[key] = int(whitelist[key]
-    
+                   
   whitelist.sort()
 
   for elem in testlist:
     if rank( int(elem), whitelist ) < 0:
-      print( elem ) 
+      print( elem )
       
 # Time execution of binary search filter print
 start_time = time.time()
