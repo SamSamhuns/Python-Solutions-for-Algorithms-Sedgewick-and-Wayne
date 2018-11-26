@@ -35,15 +35,15 @@ fpt = open( 'tinyT.txt', 'r')
 # Binary search main function
 def rank ( key, arr ):
   # Input arr must be sorted to use binary search
-  min = 0
-  max = len(arr) - 1 
+  minN = 0
+  maxN = len(arr) - 1
   while ( min <= max):
 
-    mid = min + ( max - min ) // 2
+    mid = minN + ( maxN - minN ) // 2
     if key < int(arr[mid]):
-      max = mid - 1
+      maxN = mid - 1
     elif key > int(arr[mid]):
-      min = mid + 1
+      minN = mid + 1
     else:
       return mid
   return -1
@@ -53,9 +53,9 @@ def b_search():
   whitelist = fpw.read().strip().split()
   testlist = fpt.read().strip().split()
 
-  for eInd in range(0, len(whitelist)):
-    whitelist[eInd] = int( whitelist[eInd] )
-  
+  for key, val in enumerate(whitelist):
+    whitelist[key] = int(whitelist[key]
+    
   whitelist.sort()
 
   for elem in testlist:
