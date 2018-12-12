@@ -1,0 +1,5 @@
+# Ignore all python compiled .pyc files
+*.pyc
+
+# Ihnore all Mac OS system info files
+*.DS_Store
