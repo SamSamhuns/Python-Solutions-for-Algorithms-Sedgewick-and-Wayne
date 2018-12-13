@@ -4,7 +4,7 @@
 Write a program that takes three integer command-line arguments and prints
 equal if all three are equal, and not equal otherwise.
 '''
-import sys 
+import sys
 # IMPORTANT
 # run the program as python problem_1_1_3.py arg1 arg2 arg3
 # the three arguments must be integers

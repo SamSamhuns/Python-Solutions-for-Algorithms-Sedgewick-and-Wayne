@@ -17,6 +17,6 @@ def gcd( p, q ):
     return p
   r = p % q
   print(p, q)
-  return gcd(q, r)       # Recursive approach   
+  return gcd(q, r)       # Recursive approach
 
 print( gcd( int(sys.argv[1]),int(sys.argv[2]) ) )
