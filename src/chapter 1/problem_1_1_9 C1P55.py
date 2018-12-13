@@ -5,12 +5,13 @@ Write a code fragment that puts the binary representation of a positive integer 
 into a String s.
 '''
 s = ""
+string = ""
 
 def int_to_bin ( N ):
   while N != 0:
     rem = N % 2
     N = N / 2
-    s = str(rem) + s
-  print(s)
+    string = str(rem) + s
+  print(string)
 
 int_to_bin( 15 )
