@@ -13,4 +13,4 @@ def gcd( p, q ):
   if q == 0 :            # Base case
     return p
   r = p % q
-  return gcd(q, r)       # Recursive approach      
+  return gcd(q, r)       # Recursive approach

@@ -25,7 +25,7 @@ temp = []
 fp = open( sys.argv[1], 'r')
 temp.extend((fp.readline()).strip().split(','))
 temp.extend(["A/B"])
-tb.append( temp ) 
+tb.append( temp )
 
 for line in fp:
   line = line.strip().split(',')
@@ -34,5 +34,5 @@ for line in fp:
 
 for elem in tb:
 	print( elem )
-	
+
 fp.close()

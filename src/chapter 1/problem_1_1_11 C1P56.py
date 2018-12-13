@@ -9,7 +9,7 @@ numbers.
 def bool_arr_print ( arr ):
   for i in arr:
     for j in i:
-      if j == True: 
+      if j == True:
         print('*', end=" ")
       else:
         print('_', end=" ")
